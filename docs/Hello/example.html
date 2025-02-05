@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello world</title>
+        <style>
+        :root {
+            --jn-bg: hsl(0 0% 100%);
+            --jn-text: hsl(0 0% 10%);
+        }
+    </style>
+    <script type="module">
+        import { Label } from '../../components/Label/Label.js';
+        import { Button } from '../../components/Button/Button.js';
+
+        const label = new Label({
+            parentNode: document.body,
+            text: 'Hello world!',
+            style: [
+                'font-size: 200%',
+                'text-align: center',
+            ]
+        });
+
+        new Button({
+            parentNode: document.body,
+            text: 'Change Text',
+            onclick: event => {
+                label.text = 'Hello Jenyx!';
+            }
+        });
+    </script>
+</head>
+
+</html>

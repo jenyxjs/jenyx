@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CountButton</title>
+    <style>
+        :root {
+            --jn-bg: hsl(0 0% 100%);
+            --jn-text: hsl(0 0% 10%);
+            --jn-grey: hsl(0 0% 50%);
+        }
+    </style>
+    <script type="module">
+        import { Button } from '../../components/Button/Button.js';
+
+        class CountButton extends Button {
+            constructor (options) {
+                super({
+                    count: 0,
+                    text: 'Click me!',
+                    options
+                });
+
+                this.oncount = event => {
+                    this.text = 'Count: ' + this.count;
+                };
+
+                this.onclick = event => {
+                    this.count++;
+                };
+            }
+        }
+
+        new CountButton({ parentNode: document.body });
+    </script>
+</head>
+
+</html>
