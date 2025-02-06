@@ -1,3 +1,11 @@
+/**
+ * Jenyx UI Library
+ * 
+ * Author: Alexey Khakhalin (https://github.com/jenyxjs)
+ * Contact: alexey.hahalin@gmail.com
+ * License: MIT
+ */
+
 import { Event } from './Event.js';
 import { Listener } from './Listener.js';
 

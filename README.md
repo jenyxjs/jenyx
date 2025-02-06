@@ -18,6 +18,11 @@ Jenyx is a lightweight UI components library built with pure JavaScript. No depe
 - [Hello world](/docs/Hello)
 - [CountButton](/docs/CountButton)
 
+## Author
+
+Developed by Alexey Khakhalin ([Jenyx](https://github.com/jenyxjs))  
+Contact: alexey.hahalin@gmail.com
+
 ## License
 
-MIT
+This project is licensed under the MIT License
