@@ -1,6 +1,6 @@
 # Button Component
 
-The `Button` class is a component based on `ContActiveControl` that creates a button (`<a>` by default) with customizable options. It allows modifying `href` and `target` (for links).
+The `Button` class is a component based on `ActiveControl` that creates a button (`<a>` by default) with customizable options. It allows modifying `href` and `target` (for links).
 
 ## State Support
 
@@ -24,7 +24,7 @@ new Button({
     parentNode: document.body,
     text: 'Click me!',
     onclick: () => alert('Button clicked!'),
-    style: ['background: teal', 'color: white', 'padding: 10px 20px'],
+    style: ['background: teal', 'color: white', 'padding: 1rem'],
 });
 ```
 ### Button as a Link
