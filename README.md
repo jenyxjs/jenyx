@@ -11,7 +11,8 @@ Jenyx is a lightweight UI components library built with pure JavaScript. No depe
 - **Minimal size** — a lightweight library without unnecessary code.
 - **Pure JavaScript** — no React, Vue, or other frameworks.
 - **CSS-in-JS** — styles are encapsulated within components without external CSS files.
-- **Flexible** — can be used as a foundation for your own UI kit.
+
+Can be used as a foundation for your own UI kit.
 
 ## **Examples**
 
