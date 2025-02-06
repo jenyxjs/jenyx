@@ -39,11 +39,12 @@ new Label({
 
 This example creates a label with the text "Hello world!" and centers it on the page with a larger font size.
 
-- **Text**: The primary property of the Label component. You can change the text dynamically using label.text = 'New text';.
+- **Parent Node**: Specify where the component should be appended in the DOM by passing a parentNode element.
+
+- **Text**: The primary property of the Label component. You can change the text dynamically using `label.text = 'New text';`.
 
 - **Style**: An array of CSS properties that are applied to the label element, allowing easy customization without external stylesheets.
 
-- **Parent Node**: Specify where the component should be appended in the DOM by passing a parentNode element.
 
 ## Live Example
 
