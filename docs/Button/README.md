@@ -38,6 +38,6 @@ new Button({
 ```
 In this case, `Button` behaves like an `<a>` element.
 
-## Live Example
+## Example
 
-[Hello world](https://jenyxjs.github.io/jenyx/docs/Hello/example.html)
+[Hello world](/docs/Hello)
