@@ -10,7 +10,7 @@ The `Label` component is a simple UI control designed to display text content in
 
 ## Source code
 
-Label extends the Control class by adding the text property to it. When the "text" property changes, the content of the DOM node also changes due to the binding.
+Label extends the Control class by adding the text property to it. When the `text` property changes, the content of the DOM node also changes due to the binding.
 
 ```javascript
 import { Control } from '../../components/Control/Control.js';
@@ -27,7 +27,7 @@ export class Label extends Control {
 }
 ```
 
-## Example
+## Example of use
 
 ```javascript
 new Label({
@@ -38,8 +38,6 @@ new Label({
 ```
 
 This example creates a label with the text "Hello world!" and centers it on the page with a larger font size.
-
-## Usage:
 
 - **Text**: The primary property of the Label component. You can change the text dynamically using label.text = 'New text';.
 
