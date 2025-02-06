@@ -44,10 +44,10 @@
 ## Label and Button
 
 The `Label` component is a simple control designed to display text. 
-[Details](/docs/Label) 
+[Details...](/docs/Label) 
 
 The `Button` class is a component based on `ActiveControl`.
-[Details](/docs/Button) 
+[Details...](/docs/Button) 
  
-## Live exampl
+## Live example
 [Hello world](https://jenyxjs.github.io/jenyx/docs/Hello/example.html)
