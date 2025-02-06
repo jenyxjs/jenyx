@@ -46,6 +46,6 @@ This example creates a label with the text "Hello world!" and centers it on the 
 - **Style**: An array of CSS properties that are applied to the label element, allowing easy customization without external stylesheets.
 
 
-## Live Example
+## Example
 
-[Hello world](https://jenyxjs.github.io/jenyx/docs/Hello/example.html)
+- [Hello world](/docs/Hello)

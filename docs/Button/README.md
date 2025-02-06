@@ -40,4 +40,4 @@ In this case, `Button` behaves like an `<a>` element.
 
 ## Example
 
-[Hello world](/docs/Hello)
+- [Hello world](/docs/Hello)
