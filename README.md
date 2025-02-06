@@ -13,6 +13,7 @@ This library offers the following features:
 - **Minimal size** — a lightweight library without unnecessary code.
 - **Pure JavaScript** — no React, Vue, or other frameworks.
 - **CSS-in-JS** — styles are encapsulated within components without external CSS files.
+- **Event handling and two-way data binding** — enables easy interaction and synchronization between components and data.
 
 Can be used as a foundation for your own UI kit.
 
