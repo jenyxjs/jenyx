@@ -31,6 +31,12 @@ An interactive button that increments a counter with each click. This example sh
 
 [View Example](/docs/CountButton)
 
+### Speech to Text
+
+An example of a simple speech-to-text application.
+
+[View Example](https://github.com/jenyxjs/speech-to-text)
+
 ## Author
 
 If you have any questions or need further assistance, please refer to the Jenyx documentation or reach out to the community.
