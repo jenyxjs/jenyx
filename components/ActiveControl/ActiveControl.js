@@ -2,12 +2,12 @@ import { Control } from '../Control/Control.js';
 import { Component } from '../Component/Component.js';
 
 export class ActiveControl extends Control {
-    constructor (options) {
+    constructor(options) {
         super({
             tagName: options?.tagName || 'a',
 
-            text: undefined,
-            href: undefined,
+            text: null,
+            href: null,
             target: '_self', // '_self' || '_blank' 
 
             style: [
@@ -18,23 +18,23 @@ export class ActiveControl extends Control {
             styleSet: {
                 class: Component,
 
-                selected_disabled: [],
-                selected_pressed: [],
-                selected_focused: [],
-                selected_hovered: [],
+                selected_disabled: null,
+                selected_pressed: null,
+                selected_focused: null,
+                selected_hovered: null,
 
-                selected: [],
-                disabled: [],
-                pressed: [],
-                focused: [],
-                hovered: [],
+                selected: null,
+                disabled: null,
+                pressed: null,
+                focused: null,
+                hovered: null,
             },
 
-            selected: undefined,
-            disabled: undefined,
-            pressed: undefined,
-            focused: undefined,
-            hovered: undefined,
+            selected: null,
+            disabled: null,
+            pressed: null,
+            focused: null,
+            hovered: null,
 
             currentStyle: [],
             options
@@ -43,7 +43,7 @@ export class ActiveControl extends Control {
         ActiveControl.init.call(this);
     }
 
-    static init () {
+    static init() {
         this.node.onclick = event => {
             if (!this.disabled && event.which == 1) {
                 this.emit('click', event);
@@ -86,13 +86,13 @@ export class ActiveControl extends Control {
         };
 
         this.on('text', event => {
-            if (this.text !== undefined) {
+            if (this.text !== undefined && this.text !== null) {
                 this.node.innerHTML = this.text;
             }
         }, { run: true });
 
         this.on('href', event => {
-            if (this.href !== undefined) {
+            if (this.href !== undefined && this.href !== null) {
                 this.node.href = this.href;
             }
         }, { run: true });
@@ -144,21 +144,21 @@ export class ActiveControl extends Control {
         this.refreshStyle();
     }
 
-    refreshStyle () {
+    refreshStyle() {
         this.node.tabIndex = this.disabled ? -1 : 0;
         this.currentStyle = this.getStyle();
     }
 
-    getStyle () {
+    getStyle() {
         var set = this.styleSet;
-        
+
         if (this.selected && this.disabled) {
             return set.selected_disabled;
-        } else if (this.selected && this.pressed) {
+        } else if (this.selected && this.pressed && set.selected_pressed) {
             return set.selected_pressed;
-        } else if (this.selected && this.focused) {
+        } else if (this.selected && this.focused && set.selected_focused) {
             return set.selected_focused;
-        } else if (this.selected && this.hovered) {
+        } else if (this.selected && this.hovered && set.selected_hovered) {
             return set.selected_hovered;
         } else if (this.disabled) {
             return set.disabled;
@@ -175,8 +175,8 @@ export class ActiveControl extends Control {
         return [];
     }
 
-    set currentStyle (value) {
-        var styles = [...this.style, ...value];
+    set currentStyle(value) {
+        var styles = [...this.style, ...value || []];
         this.node.style.cssText = styles.join(';');
         this.refreshVisible();
     }
