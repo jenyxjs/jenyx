@@ -37,6 +37,16 @@ An example of a simple speech-to-text application.
 
 [View Example](https://github.com/jenyxjs/speech-to-text)
 
+### Tic-Tac-Toe
+
+As an example, a Tic-Tac-Toe game was created to demonstrate the capabilities of the library in action.
+
+- PWA: Progressive Web App support.
+- Google Analytics: Integration for tracking and analytics.
+- Speech: Text-to-speech and speech recognition
+
+[View Example](https://github.com/jenyxjs/tic-tac-toe)
+
 ## Author
 
 If you have any questions or need further assistance, please refer to the Jenyx documentation or reach out to the community.
