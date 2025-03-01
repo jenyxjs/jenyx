@@ -39,7 +39,7 @@ An example of a simple speech-to-text application.
 
 ### Tic-Tac-Toe
 
-As an example, a Tic-Tac-Toe game was created to demonstrate the capabilities of the library in action.
+A Tic-Tac-Toe game was created as an example to showcase the library's capabilities.
 
 - PWA: Progressive Web App support.
 - Google Analytics: Integration for tracking and analytics.
